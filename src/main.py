@@ -44,6 +44,9 @@ def main():
     res = upload_file(source_prefix+'/'+source_file_name, dest_bucket, dest_prefix+'/'+dest_file_name)
     if res is True:
         print("The file is successfully uploaded into s3")
+    else:
+        print("The file upload is failed!!!")
+        
 
 
 if __name__ == "__main__":
